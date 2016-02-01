@@ -25,7 +25,8 @@
   "license": "ISC",
   "dependencies": {
     "concat-stream": "^1.5.0",
-    "jsdom": "^8.0.1"
+    "jsdom": "^8.0.1",
+    "tests-ex-markdown": "^2.0.0"
   },
   "devDependencies": {
     "livescript": "^1.4.0",

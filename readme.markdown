@@ -15,7 +15,11 @@ doctype stuff added, and the finished SVG is printed on `stdout`.
 
 For example:
 
+<!-- !test program ./index.js | head -c -1 -->
+
 `vis.js`:
+
+<!-- !test in example -->
 
 ```js
 var vis = document.getElementById('vis')
@@ -24,7 +28,20 @@ rect.setAttribute('width', 50)
 rect.setAttribute('height', 50)
 ```
 
+Run in a terminal:
+
     svg-pizzabase < vis.js > output.svg
+
+<!-- !test out example -->
+
+`output.svg`:
+
+```svg
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="vis"><rect width="50" height="50"></rect></svg>
+```
 
 If you need the SVG element to be a particular size, just change select it and
 change its `width` and `height` attributes it in your code.
