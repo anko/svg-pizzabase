@@ -25,6 +25,8 @@
     "node": ">=4"
   },
   "author": "Anko <an@cyan.io> (http://an.cyan.io)",
+  "repository": "anko/svg-pizzabase",
+  "bugs": "https://github.com/anko/svg-pizzabase/issues",
   "license": "ISC",
   "dependencies": {
     "concat-stream": "^1.5.0",
