@@ -1,7 +1,7 @@
 {
   "name": "visbuild",
   "version": "1.0.0",
-  "description": "a script to help extract JS-created visualisations into SVG files",
+  "description": "JS → valid SVG file with doctype decorations and all that",
   "main": "index.js",
   "scripts": {
     "prepublish": "make",
@@ -13,7 +13,14 @@
   "files": [
     "index.js"
   ],
-  "keywords": [],
+  "keywords": [
+    "d3.js",
+    "visualisation",
+    "command line",
+    "tool",
+    "DOM",
+    "SVG"
+  ],
   "author": "Anko <an@cyan.io> (http://an.cyan.io)",
   "license": "ISC",
   "dependencies": {
