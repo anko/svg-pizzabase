@@ -1,4 +1,5 @@
-# svg-pizzabase
+# svg-pizzabase [![](https://img.shields.io/npm/v/svg-pizzabase.svg?style=flat-square)][1] [![](https://img.shields.io/travis/anko/svg-pizzabase.svg?style=flat-square)][2] [![](https://img.shields.io/david/anko/svg-pizzabase.svg?style=flat-square)][3]
+
 
 Script to help create SVG visualisations from JavaScript code; headlessly and
 server-side.  Like a ready-made pizza-base: add toppings and bake.
