@@ -1,7 +1,9 @@
 # svg-pizzabase
 
-Script to help create SVG visualisations from JavaScript code headlessly and
+Script to help create SVG visualisations from JavaScript code; headlessly and
 server-side.  Like a ready-made pizza-base: add toppings and bake.
+
+    npm i -g svg-pizzabase
 
 ## How
 
@@ -13,12 +15,16 @@ doctype stuff added, and the finished SVG is printed on `stdout`.
 
 For example:
 
+`vis.js`:
+
 ```js
 var vis = document.getElementById('vis')
 var rect = vis.appendChild(document.createElement('rect'))
 rect.setAttribute('width', 50)
 rect.setAttribute('height', 50)
 ```
+
+    svg-pizzabase < vis.js > output.svg
 
 If you need the SVG element to be a particular size, just change select it and
 change its `width` and `height` attributes it in your code.
