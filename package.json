@@ -21,6 +21,9 @@
     "DOM",
     "SVG"
   ],
+  "engines": {
+    "node": ">=4"
+  },
   "author": "Anko <an@cyan.io> (http://an.cyan.io)",
   "license": "ISC",
   "dependencies": {

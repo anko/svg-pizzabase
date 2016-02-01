@@ -3,7 +3,6 @@
 require! <[ jsdom concat-stream ]>
 
 process.stdin.pipe concat-stream (client-script) ->
-
   e, window <- jsdom.env "<body><svg id='vis'></svg></body>" src : [ client-script ]
 
   if e then console.error e ; process.exit 1
