@@ -1,23 +1,37 @@
-# visbuild
+# svg-pizzabase
 
-Script to help create SVG visualisations from JavaScript code.
+Script to help create SVG visualisations from JavaScript code headlessly and
+server-side.  Like a ready-made pizza-base: add toppings and bake.
 
 ## How
 
-Pass client JavaScript on `stdin`.  In that script, append stuff to the `<svg
-id='vis'` present on the page.  When that script finishes running, the SVG is
-extracted, the proper doctype stuff added, and the finished SVG is printed on
-`stdout`.
+Pass client JavaScript on `stdin`.  In that script, append stuff to the
+`svg#vis` element present on the page.
 
-You might need [browserify][1] (or [webpack][2], or another bundler) to get
-[D3][3] (or whatever other JS library you want to use) into the same file for
-writing to stdin.
+When that script finishes running, the SVG element is extracted, the proper
+doctype stuff added, and the finished SVG is printed on `stdout`.
+
+For example:
+
+```js
+var vis = document.getElementById('vis')
+var rect = vis.appendChild(document.createElement('rect'))
+rect.setAttribute('width', 50)
+rect.setAttribute('height', 50)
+```
+
+If you need the SVG element to be a particular size, just change select it and
+change its `width` and `height` attributes it in your code.
+
+Works brilliantly with [browserify][1] (or [webpack][2], or another bundler) to
+get [D3][3] (or whatever other JS library you want to use) into the same file
+for writing to stdin.
 
 ## Why
 
 I often draw stuff to clarify [my Game Development SE answers][4].  Sometimes
 it's convenient to draw with [D3][5] code.  This eases that.  Give it code and
-it will give you the picture.
+it will give you a picture.
 
 ## Bonus tip: PNG conversion
 

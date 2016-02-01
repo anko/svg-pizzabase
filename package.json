@@ -1,14 +1,14 @@
 {
-  "name": "visbuild",
+  "name": "svg-pizzabase",
   "version": "1.0.0",
-  "description": "JS → valid SVG file with doctype decorations and all that",
+  "description": "give JS, receive valid SVG with doctype decorations and all that",
   "main": "index.js",
   "scripts": {
     "prepublish": "make",
     "test": "make test"
   },
   "bin": {
-    "visbuild": "index.js"
+    "svg-pizzabase": "index.js"
   },
   "files": [
     "index.js"
