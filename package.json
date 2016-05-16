@@ -31,11 +31,11 @@
   "license": "ISC",
   "dependencies": {
     "concat-stream": "^1.5.0",
-    "jsdom": "^8.0.1",
+    "jsdom": "^9.1.0",
     "tests-ex-markdown": "^2.0.0"
   },
   "devDependencies": {
-    "livescript": "^1.4.0",
+    "livescript": "^1.5.0",
     "tape": "^4.0.2"
   }
 }
