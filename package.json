@@ -1,6 +1,6 @@
 {
   "name": "svg-pizzabase",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "give JS, receive valid SVG with doctype decorations and all that",
   "main": "index.js",
   "scripts": {
