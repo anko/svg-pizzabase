@@ -3,9 +3,9 @@
 require! <[ jsdom concat-stream ]>
 
 process.stdin.pipe concat-stream (client-script) ->
-  e, window <- jsdom.env "<body><svg id='vis'></svg></body>" src : [ client-script ]
+  { window } = new jsdom.JSDOM "<body><svg id='vis'></svg></body>" { run-scripts: "outside-only" }
 
-  if e then console.error e ; process.exit 1
+  window.eval client-script.to-string!
 
   svg-doctype = """
   <?xml version="1.0" standalone="no"?>

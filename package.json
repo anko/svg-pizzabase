@@ -30,12 +30,15 @@
   "bugs": "https://github.com/anko/svg-pizzabase/issues",
   "license": "ISC",
   "dependencies": {
-    "concat-stream": "^1.5.0",
-    "jsdom": "^9.1.0",
-    "tests-ex-markdown": "^2.0.0"
+    "concat-stream": "^2.0.0",
+    "decimal": "0.0.2",
+    "jsdom": "^16.0.0",
+    "nopt": "^4.0.1",
+    "tests-ex-markdown": "^2.0.3"
   },
   "devDependencies": {
-    "livescript": "^1.5.0",
-    "tape": "^4.0.2"
+    "livescript": "^1.6.0",
+    "tape": "^4.13.0",
+    "tmp": "0.1.0"
   }
 }
