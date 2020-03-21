@@ -4,7 +4,7 @@
   "description": "give JS, receive valid SVG with doctype decorations and all that",
   "main": "index.js",
   "scripts": {
-    "prepublish": "make",
+    "prepare": "make",
     "test": "make test",
     "test-readme": "txm readme.markdown"
   },
@@ -31,14 +31,10 @@
   "license": "ISC",
   "dependencies": {
     "concat-stream": "^2.0.0",
-    "decimal": "0.0.2",
-    "jsdom": "^16.0.0",
-    "nopt": "^4.0.1",
-    "tests-ex-markdown": "^2.0.3"
+    "jsdom": "^16.0.0"
   },
   "devDependencies": {
     "livescript": "^1.6.0",
-    "tape": "^4.13.0",
-    "tmp": "0.1.0"
+    "tests-ex-markdown": "^3.0.0"
   }
 }
