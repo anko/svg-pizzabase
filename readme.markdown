@@ -15,7 +15,7 @@ doctype stuff added, and the finished SVG is printed on `stdout`.
 
 For example:
 
-<!-- !test program ./index.js | head -c -1 -->
+<!-- !test program node ./index.js | head -c -1 -->
 
 `vis.js`:
 
@@ -38,7 +38,7 @@ Run in a terminal:
 
 ```svg
 <?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg id="vis"><rect width="50" height="50"></rect></svg>
 ```

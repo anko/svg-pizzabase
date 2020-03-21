@@ -3,4 +3,4 @@ node_js:
   - node
   - lts/*
 
-script: make test-all
+script: npm run-script test-all

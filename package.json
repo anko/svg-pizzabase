@@ -4,9 +4,9 @@
   "description": "give JS, receive valid SVG with doctype decorations and all that",
   "main": "index.js",
   "scripts": {
-    "prepare": "make",
-    "test": "make test",
-    "test-readme": "txm readme.markdown"
+    "test": "node test.js",
+    "test-readme": "txm readme.markdown",
+    "test-all": "npm run-script test; npm run-script test-readme"
   },
   "bin": {
     "svg-pizzabase": "index.js"
@@ -30,11 +30,9 @@
   "bugs": "https://github.com/anko/svg-pizzabase/issues",
   "license": "ISC",
   "dependencies": {
-    "concat-stream": "^2.0.0",
     "jsdom": "^16.0.0"
   },
   "devDependencies": {
-    "livescript": "^1.6.0",
     "tests-ex-markdown": "^3.0.0"
   }
 }
