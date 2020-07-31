@@ -15,7 +15,7 @@ doctype stuff added, and the finished SVG is printed on `stdout`.
 
 For example:
 
-<!-- !test program node ./index.js | head -c -1 -->
+<!-- !test program node ./index.js -->
 
 `vis.js`:
 
