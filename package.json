@@ -30,9 +30,9 @@
   "bugs": "https://github.com/anko/svg-pizzabase/issues",
   "license": "ISC",
   "dependencies": {
-    "jsdom": "^16.5.3"
+    "jsdom": "^16.6.0"
   },
   "devDependencies": {
-    "txm": "^7.4.5"
+    "txm": "^7.4.6"
   }
 }
